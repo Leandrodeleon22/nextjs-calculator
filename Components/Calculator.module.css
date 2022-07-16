@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 7rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 7rem);
+  grid-gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  margin-top: 4rem;
+}
+
+.output {
+  display: flex;
+  background-color: rgb(55, 58, 57);
+  grid-column: 1/ -1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous {
+  font-size: 2rem;
+  color: white;
+}
+
+.output .current {
+  font-size: 4rem;
+  color: white;
+}
+
+.spanTwo {
+  grid-column: span 2;
+}
+
+.container button {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.container button:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.container button:active {
+  background-color: rgb(231, 231, 231);
+}

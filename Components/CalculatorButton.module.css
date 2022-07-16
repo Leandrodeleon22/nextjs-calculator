@@ -1,0 +1,13 @@
+.button {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button button:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.button button:active {
+  background-color: rgb(231, 231, 231);
+}
