@@ -87,6 +87,8 @@ function evaluate({ currentOperand, prevOperand, operation }) {
   const prev = parseFloat(prevOperand);
   const current = parseFloat(currentOperand);
 
+  if (!prevOperand) return;
+
   let total = "";
 
   if (operation === "+") {
